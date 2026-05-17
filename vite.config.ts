@@ -10,8 +10,9 @@ export default defineConfig({
     react(),
     dts({
       include: ["src"],
-      outDirs: "dist",
+      outDirs: ["dist"], // ← array, not string
       insertTypesEntry: true, // ← this generates the types entry
+      tsconfigPath: "./tsconfig.app.json",
     }),
   ],
   resolve: {
