@@ -1,5 +1,6 @@
 // In each app's main.tsx or App.tsx
 // import "@sharpnr/ui/dist/style.css";
+import "./index.css";
 
 /* -------------------------------------------------------------------------- */
 /*                             ShadcnUI Component                             */
