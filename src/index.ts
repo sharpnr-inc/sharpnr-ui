@@ -212,6 +212,14 @@ export { Skeleton } from "./components/ui/skeleton";
 export { Kbd, KbdGroup } from "./components/ui/kbd";
 export { Button } from "./components/ui/button";
 export { ScrollArea, ScrollBar } from "./components/ui/scroll-area";
+export {
+  Avatar,
+  AvatarBadge,
+  AvatarFallback,
+  AvatarGroup,
+  AvatarGroupCount,
+  AvatarImage,
+} from "./components/ui/avatar";
 
 /* -------------------------------------------------------------------------- */
 /*                                    Utils                                   */
