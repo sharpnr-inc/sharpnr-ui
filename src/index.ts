@@ -62,6 +62,17 @@ export {
 } from "./components/ui/sidebar";
 
 export {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./components/ui/sheet";
+
+export {
   Dialog,
   DialogClose,
   DialogContent,
@@ -151,6 +162,45 @@ export {
   EmptyTitle,
 } from "./components/ui/empty";
 
+export {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "./components/ui/hover-card";
+
+export {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "./components/ui/pagination";
+
+export {
+  Popover,
+  PopoverAnchor,
+  PopoverContent,
+  PopoverDescription,
+  PopoverHeader,
+  PopoverTitle,
+  PopoverTrigger,
+} from "./components/ui/popover";
+
+export {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "./components/ui/table";
+
+export { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
+export { Switch } from "./components/ui/switch";
 export { Spinner } from "./components/ui/spinner";
 export { Badge, badgeVariants } from "./components/ui/badge";
 export { Separator } from "./components/ui/separator";
@@ -175,9 +225,12 @@ export { cn } from "./lib/utils";
 
 export { GlobalLoader } from "./components/ui/GlobalLoader";
 export { GlobalErrorPage } from "./components/ui/global-err";
+export { NotFound } from "./components/ui/404Page";
 
 /* -------------------------------------------------------------------------- */
 /*                                    Hooks                                   */
 /* -------------------------------------------------------------------------- */
 
 export { useIsMobile } from "./hooks/use-mobile";
+export { ThemeProvider, useTheme } from "./hooks/theme-provider";
+export { ModeToggle } from "./hooks/ThemeToggle";
