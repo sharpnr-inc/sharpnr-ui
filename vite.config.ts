@@ -10,8 +10,8 @@ export default defineConfig({
     react(),
     dts({
       include: ["src"],
-      outDirs: ["dist"], // ← array, not string
-      insertTypesEntry: true, // ← this generates the types entry
+      outDirs: ["dist"],
+      insertTypesEntry: true,
       tsconfigPath: "./tsconfig.app.json",
     }),
   ],
@@ -22,17 +22,23 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.ts"), // ← library entry, not index.html
+      entry: resolve(__dirname, "src/index.ts"),
       name: "SharpUI",
       formats: ["es"],
-      fileName: (format) => `index.${format}.js`,
+      fileName: () => `index.es.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"], // ← don't bundle react
+      external: [
+        "react",
+        "react-dom",
+        "react/jsx-runtime", // ← add this
+        "react/jsx-dev-runtime", // ← add this
+      ],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "react/jsx-runtime": "ReactJsxRuntime",
         },
       },
     },
