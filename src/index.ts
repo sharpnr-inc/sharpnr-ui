@@ -1,7 +1,10 @@
 // In each app's main.tsx or App.tsx
 // import "@sharpnr/ui/dist/style.css";
 
-export { Button } from "./components/ui/button";
+/* -------------------------------------------------------------------------- */
+/*                             ShadcnUI Component                             */
+/* -------------------------------------------------------------------------- */
+
 export {
   Card,
   CardAction,
@@ -11,6 +14,18 @@ export {
   CardHeader,
   CardTitle,
 } from "./components/ui/card";
+
+export {
+  Command,
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "./components/ui/command";
 
 export {
   ButtonGroup,
@@ -77,11 +92,39 @@ export {
 } from "./components/ui/dropdown-menu";
 
 export {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectScrollDownButton,
+  SelectScrollUpButton,
+  SelectSeparator,
+  SelectTrigger,
+  SelectValue,
+} from "./components/ui/select";
+
+export {
   Alert,
   AlertAction,
   AlertDescription,
   AlertTitle,
 } from "./components/ui/alert";
+
+export {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogMedia,
+  AlertDialogOverlay,
+  AlertDialogPortal,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "./components/ui/alert-dialog";
 
 export {
   InputGroup,
@@ -99,13 +142,39 @@ export {
   TooltipTrigger,
 } from "./components/ui/tooltip";
 
+export {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+} from "./components/ui/empty";
+
+export { Spinner } from "./components/ui/spinner";
+export { Badge, badgeVariants } from "./components/ui/badge";
 export { Separator } from "./components/ui/separator";
 export { Textarea } from "./components/ui/textarea";
 export { Toaster } from "./components/ui/sonner";
 export { toast } from "sonner";
 export { Input } from "./components/ui/input";
+export { Skeleton } from "./components/ui/skeleton";
+export { Kbd, KbdGroup } from "./components/ui/kbd";
+export { Button } from "./components/ui/button";
+export { ScrollArea, ScrollBar } from "./components/ui/scroll-area";
+
+/* -------------------------------------------------------------------------- */
+/*                                    Utils                                   */
+/* -------------------------------------------------------------------------- */
 
 export { cn } from "./lib/utils";
+
+/* -------------------------------------------------------------------------- */
+/*                        Custome Sharpnr UI component                        */
+/* -------------------------------------------------------------------------- */
+
+export { GlobalLoader } from "./components/ui/GlobalLoader";
+export { GlobalErrorPage } from "./components/ui/global-err";
 
 /* -------------------------------------------------------------------------- */
 /*                                    Hooks                                   */
