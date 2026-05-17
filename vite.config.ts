@@ -5,7 +5,15 @@ import dts from "vite-plugin-dts";
 import { resolve } from "path";
 
 export default defineConfig({
-  plugins: [tailwindcss(), react(), dts({ include: ["src"] })],
+  plugins: [
+    tailwindcss(),
+    react(),
+    dts({
+      include: ["src"],
+      outDirs: "dist",
+      insertTypesEntry: true, // ← this generates the types entry
+    }),
+  ],
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
