@@ -4,16 +4,28 @@ import tailwindcss from "@tailwindcss/vite";
 import dts from "vite-plugin-dts";
 import { resolve } from "path";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    tailwindcss(), // ← add this
-    react(),
-    dts({ include: ["src"] }),
-  ],
+  plugins: [tailwindcss(), react(), dts({ include: ["src"] })],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"), // ← this is what shadcn needs
+      "@": resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    lib: {
+      entry: resolve(__dirname, "src/index.ts"), // ← library entry, not index.html
+      name: "SharpUI",
+      formats: ["es", "cjs"],
+      fileName: (format) => `index.${format}.js`,
+    },
+    rollupOptions: {
+      external: ["react", "react-dom"], // ← don't bundle react
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
+      },
     },
   },
 });
