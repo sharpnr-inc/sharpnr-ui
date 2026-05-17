@@ -234,11 +234,15 @@ export { cn } from "./lib/utils";
 export { GlobalLoader } from "./components/ui/GlobalLoader";
 export { GlobalErrorPage } from "./components/ui/global-err";
 export { NotFound } from "./components/ui/404Page";
+export { SharpnrSidebarFooter } from "./components/ui/SharpnrSidebarFooter";
 
 /* -------------------------------------------------------------------------- */
 /*                                    Hooks                                   */
 /* -------------------------------------------------------------------------- */
 
 export { useIsMobile } from "./hooks/use-mobile";
+export { DialogModalProvider, useDialogModal } from "./hooks/useDialog";
+export { SheetProvider, useSheet } from "./hooks/useSheets";
+export { FormsModalProvider, useFormsModal } from "./hooks/useFormModal";
 export { ThemeProvider, useTheme } from "./hooks/theme-provider";
 export { ModeToggle } from "./hooks/ThemeToggle";
