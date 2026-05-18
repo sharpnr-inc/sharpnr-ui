@@ -44,6 +44,9 @@ export default defineConfig({
         "react/jsx-runtime",
         "react/jsx-dev-runtime",
         "lucide-react",
+        "gsap",
+        "@gsap/react",
+        "framer-motion",
       ],
       output: {
         globals: {
