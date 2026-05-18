@@ -43,23 +43,7 @@ export default defineConfig({
         "react-dom",
         "react/jsx-runtime",
         "react/jsx-dev-runtime",
-        "radix-ui",
         "lucide-react",
-        // add these too ↓
-        "@radix-ui/react-dialog",
-        "@radix-ui/react-dropdown-menu",
-        "@radix-ui/react-tooltip",
-        "@radix-ui/react-separator",
-        "@radix-ui/react-slot",
-        "@radix-ui/react-visually-hidden",
-        "@radix-ui/react-alert-dialog",
-        "@radix-ui/react-avatar",
-        "@radix-ui/react-hover-card",
-        "@radix-ui/react-popover",
-        "@radix-ui/react-scroll-area",
-        "@radix-ui/react-select",
-        "@radix-ui/react-switch",
-        "@radix-ui/react-tabs",
       ],
       output: {
         globals: {
