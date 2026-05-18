@@ -213,6 +213,8 @@ export { Skeleton } from "./components/ui/skeleton";
 export { Kbd, KbdGroup } from "./components/ui/kbd";
 export { Button } from "./components/ui/button";
 export { ScrollArea, ScrollBar } from "./components/ui/scroll-area";
+export { Checkbox } from "./components/ui/checkbox";
+export { Label } from "./components/ui/label";
 export {
   Avatar,
   AvatarBadge,
