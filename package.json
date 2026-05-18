@@ -1,6 +1,6 @@
 {
   "name": "@sharpnr/ui",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "description": "Sharpnr's shared UI component library",
   "main": "./dist/index.es.js",
