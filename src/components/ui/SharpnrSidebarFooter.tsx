@@ -122,20 +122,6 @@ export function SharpnrSidebarFooter() {
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             className="relative shrink-0 w-8 h-8"
           >
-            {/* Conic ring — white sweep */}
-            {/* <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-              className="absolute -inset-0.5 rounded-[10px]"
-              style={{
-                background: `conic-gradient(
-                  from 0deg,
-                  rgba(240,242,247,0) 0%,
-                  rgba(240,242,247,0.9) 40%,
-                  rgba(240,242,247,0) 60%
-                )`,
-              }}
-            /> */}
             {/* Logo image inside ring */}
             <div
               className="absolute inset-[1.5px] rounded-[8px] overflow-hidden z-10"
