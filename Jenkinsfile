@@ -1,1 +1,0 @@
-// Jenkinsfile for sharp-marketplace
