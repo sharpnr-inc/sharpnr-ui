@@ -1,6 +1,6 @@
 {
   "name": "@sharpnr/ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "Sharpnr's shared UI component library",
   "main": "./dist/index.es.js",
@@ -54,8 +54,7 @@
     "framer-motion": ">=11",
     "lucide-react": ">=0.300.0",
     "sonner": "^2.0.7",
-    "next-themes": "^0.4.6",
-    "cmdk": "^1.1.1"
+    "next-themes": "^0.4.6"
   },
   "peerDependenciesMeta": {
     "framer-motion": {
@@ -66,13 +65,11 @@
     },
     "sonner": {
       "optional": true
-    },
-    "cmdk": {
-      "optional": true
     }
   },
   "dependencies": {
     "@fontsource-variable/outfit": "^5.2.8",
+    "cmdk": "^1.1.1",
     "embla-carousel-react": "^8.6.0",
     "gsap": "^3.14.2",
     "tw-animate-css": "^1.4.0"
