@@ -45,7 +45,6 @@ export default defineConfig({
         "react/jsx-dev-runtime",
         "lucide-react",
         "gsap",
-        "@gsap/react",
         "framer-motion",
         "radix-ui",
         "@radix-ui/react-alert-dialog",
