@@ -248,6 +248,7 @@ export { GlobalLoader } from "./components/ui/GlobalLoader";
 export { GlobalErrorPage } from "./components/ui/global-err";
 export { NotFound } from "./components/ui/404Page";
 export { SharpnrSidebarFooter } from "./components/ui/SharpnrSidebarFooter";
+export type { SharpnrSidebarFooterProps } from "./components/ui/SharpnrSidebarFooter";
 
 /* -------------------------------------------------------------------------- */
 /*                                    Hooks                                   */
